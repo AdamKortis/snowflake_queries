@@ -19,14 +19,14 @@ I built this module to allow me to connect to Snowflake databases more quickly. 
 ## Module Information
 
 ### Query Object
-Query(user: str, password: str, account: str, environment: bool = True)
+Query(user: str, password: str, account: str, environment: bool = True)  
 Initializes the Query object with information to connect to the snowflake database.
 * "user" is a string representing the name of the enviromemnt variable or the direct username.
 * "password" is a string representing the name of the enviromemnt variable or the direct password.
 * "account" is a string representing the name of the account enviromemnt variable or the direct account name.
 * "environment" is a bool value: True would use the information stored in environment variables. False would use the specific values passed to the Query object on initialization.
 
-#### get_query(query_str: str)
+#### get_query(query_str: str)  
 This method connects and queries the snowflake database returning the data as a pandas dataframe.
 * "query_str" a string object that should be a SQL query "SELECT COL_1, COL_2 FROM DATABASE WHERE CONDITION = VALUE ORDER BY COL_1".
 
