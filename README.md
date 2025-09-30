@@ -34,7 +34,7 @@ This method connects and queries the snowflake database returning the data as a 
 
 ## Example:
 ```python
-import snowflake_query
+from snowflake_query import Query
 import pandas as pd
 
 query = Query('ENV_SNOWFLAKE_USER', 'ENV_SNOWFLAKE_PASSWORD', 'ENV_SNOWFLAKE_ACCOUNT')
